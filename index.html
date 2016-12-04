@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- 
+Designer and Developer: Pedro Oliveira
+-->
+<html>
+
+    <head>
+    	<title>RPGIST</title>
+    	<link rel="stylesheet" href="main.css">
+    	<link rel="stylesheet" href="normalize.css">
+    </head>
+
+    <body>
+
+    	<button class="logout-btn btn-round btn">#</button>
+    	
+    	<main class="main-container">
+    		<header class="header">
+    			<h1 class="status-label">IN PROGRESS</h1>
+    			<div class="counter-container">
+    				<span id="top-value">0</span>
+    				<span id="score-bar"></span>
+    				<span id="bottom-value">0</span>
+    			</div>
+    		</header>
+    		
+    		<section class="quest-container">
+    			<input type="text" placeholder="" id="new-quest-input" onfocus="if(this.value == 'NAME A NEW QUEST') { this.value = ''; }" value="NAME A NEW QUEST">
+    			<button id="new-quest-btn" class="btn-rectangular btn" >ACCEPT</button>
+    			
+    			<div id="quest-list-container">
+    			<p id="empty-list-p">You have no quests in progress, stop being lazy!</p>
+    			</div>
+    		</section>
+    	</main>
+
+   <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,305 @@
+/***********************************************
+*
+*					RULES TO FOLLOW:
+
+						- The declarations must be in alphabetic order.
+
+						- Declaration of elements must be ordered like the html nest order.
+
+						- Style the generalist class first (avoid repetitive code).
+*
+***********************************************/
+
+/***********************************************
+*
+*
+*					Dark Gray: 				#152028;
+*					Light Gray: 			#464646;
+*					Orange: 					#F9690E;
+					Orange(Shadow)		#3A1C11;
+*					Green: 						#27AE60;
+*					Purple: 					#7776B6;
+					Background:				#CCCCCC;
+*
+*
+***********************************************/
+
+/***********************************************
+*
+*					FONT-FAMILYS
+*
+***********************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Cabin|Cinzel:900');
+
+/***********************************************
+*
+*					BODY
+*
+***********************************************/
+
+body{
+	align-items: center;
+	background-color: #CCCCCC;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+
+*{
+	font-family: "Cabin", sans-serif;	
+}
+
+p{
+	margin: 0;
+}
+
+/***********************************************
+*
+*					LOGOUT BUTTON
+*
+***********************************************/
+.btn{
+	cursor: pointer;
+}
+.btn-round{
+	background-color: #F9690E;
+	border: none;
+	border-radius: 44px;
+	height: 44px;
+	width: 44px;	
+}
+
+.logout-btn{
+	display: block;
+	margin-bottom: 30px;
+	margin-left: auto;
+	
+}
+
+/***********************************************
+*
+*					MAIN-CONTAINER
+*
+***********************************************/
+
+.main-container{
+	background-color: #464646;
+	border-radius: 30px;
+	box-shadow: 0px 10px 0px #3E3E3E;
+	padding-bottom: 20px;
+	width: 460px;
+}
+
+/***********************************************
+*
+*					HEADER
+*
+***********************************************/
+
+.header{
+	align-items: center;
+	background-color: #152028;
+	border-radius: 30px 30px 0px 0px;
+	color: #F9690E;
+	display: flex;	
+  justify-content: center;
+}
+
+.status-label{
+	font-family: 'Cinzel', serif ;
+	flex-grow: 2;
+	font-size: 28px;
+	height: 100%;
+	text-align: center;	
+}
+
+/***********************************************
+*
+*					COUNTER CONTAINER
+*
+***********************************************/
+
+
+.counter-container{
+	align-items: center;
+	background-color: #F9690E;
+	border-radius: 0px 30px 0px 0px;
+	color: white;
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	font-size: 28px;
+	font-weight: bold;
+	height: 180px;
+  justify-content: center;
+	width: 140px;	
+}
+
+#bottom-value, #score-bar{
+	opacity: .5;
+}
+
+#score-bar{
+	background-color: white;
+	height: 2px;
+	width: 50%;
+}
+
+/***********************************************
+*
+*					QUEST CONTAINER
+*
+***********************************************/
+
+.quest-container{
+	margin: 35px 0px 0px 0px;
+	font-size: 16px;
+}
+
+#new-quest-input{
+	background-color: transparent;
+	border: none;
+	border-bottom: 10px solid #F9690E;
+	color: #F9690E;
+	font-weight: bold;
+	height: 105px;
+	margin-bottom: 35px;
+	text-align: center;
+	width: 100%;	
+}
+
+::-webkit-input-placeholder {
+  color: #F9690E;
+	font-weight: bold;
+	font-family: "Cabin", sans-serif;
+	text-align: center;
+}
+
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #F9690E;
+	font-family: "Cabin", sans-serif;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #F9690E;
+	font-family: "Cabin", sans-serif;
+}
+
+:-ms-input-placeholder {
+   color: #F9690E;
+	font-family: "Cabin", sans-serif;
+}
+
+.new-quest-input:focus{
+	
+}
+
+/***********************************************
+*
+*					BUTTONS
+*
+***********************************************/
+
+.btn-rectangular{
+	border: none;
+	font-weight: bold;
+	height: 105px;
+	width: 100%;
+}
+
+#new-quest-btn{
+	background-color: #F9690E;
+	box-shadow: 0px 10px 0px #3A1C11;
+	color: white;
+	
+}
+
+/***********************************************
+*
+*					EMPTY LIST MESSAGES
+*
+***********************************************/
+
+#empty-list-p{
+	color: white;
+	display: block;
+	margin-top: 35px;
+	text-align: center;
+	
+}
+
+/***********************************************
+*
+*					QUEST LIST ITEMS
+*
+***********************************************/
+ul{
+	padding: 0;
+	margin: 35px 0px;
+}
+
+.quest-item{
+	display: flex;
+	height: 105px;
+	margin-bottom: 35px;
+}
+
+.quest-item-div{
+	width: 100%;	
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	background-color: white;
+	list-style-type: none;
+	font-size: 20px;
+}
+
+.quest-name{
+	width: 80%;
+	margin-left: 20px;
+}
+
+/***********************************************
+*
+*					QUEST LIST BUTTONS
+*
+***********************************************/
+
+.quest-btn{
+	margin-left: auto;
+	margin-right: 20px;
+	
+	position: relative;
+}
+
+.sub-button{
+	position: absolute;
+}
+
+.complete-btn{
+	background-color: blue;
+}
+
+.edit-btn{
+	background-color: yellow;
+}
+
+.remove-btn{
+	background-color: green;
+}
+
+.quest-btn:hover .edit-btn{
+	left: -88px;
+}
+
+.quest-btn:hover .complete-btn{
+	left: -44px;
+	top: -44px;
+}
+
+.quest-btn:hover .remove-btn{
+	left: -44px;
+	bottom: -44px;
+}
